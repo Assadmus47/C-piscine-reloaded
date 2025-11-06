@@ -6,18 +6,18 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 11:48:14 by marvin            #+#    #+#             */
-/*   Updated: 2025/11/06 11:48:14 by marvin           ###   ########.fr       */
+/*   Updated: 2025/11/06 18:05:37 by mkacemi          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    ft_foreach(int *tab, int length, void (*f)(int))
+void	ft_foreach(int *tab, int length, void (*f)(int))
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (i < length)
-    {
-        (*f)(tab[i]);
-        i++;
-    }   
+	i = 0;
+	while (i < length)
+	{
+		(*f)(tab[i]);
+		i++;
+	}
 }

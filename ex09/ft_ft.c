@@ -1,27 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_count_if.c                                      :+:      :+:    :+:   */
+/*   ft_ft.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: mkacemi <mkacemi@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/06 12:36:12 by marvin            #+#    #+#             */
-/*   Updated: 2025/11/06 18:13:42 by mkacemi          ###   ########lyon.fr   */
+/*   Created: 2025/11/04 14:29:33 by mkacemi           #+#    #+#             */
+/*   Updated: 2025/11/04 14:31:25 by mkacemi          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_count_if(char **tab, int (*f)(char*))
+void	ft_ft(int *nbr)
 {
-	int	i;
-	int	c;
-
-	c = 0;
-	i = 0;
-	while (tab[i] != NULL)
-	{
-		if (f(tab[i]) == 1)
-			c++;
-		i++;
-	}
-	return (c);
+	*nbr = 42;
 }
