@@ -1,27 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_count_if.c                                      :+:      :+:    :+:   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: mkacemi <mkacemi@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/06 12:36:12 by marvin            #+#    #+#             */
-/*   Updated: 2025/11/06 18:13:42 by mkacemi          ###   ########lyon.fr   */
+/*   Created: 2025/11/04 14:38:42 by mkacemi           #+#    #+#             */
+/*   Updated: 2025/11/04 14:44:30 by mkacemi          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_count_if(char **tab, int (*f)(char*))
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
-	int	i;
-	int	c;
-
-	c = 0;
-	i = 0;
-	while (tab[i] != NULL)
-	{
-		if (f(tab[i]) == 1)
-			c++;
-		i++;
-	}
-	return (c);
+	*div = a / b;
+	*mod = a % b;
 }
